@@ -1,0 +1,124 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.avatar {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+.name {
+  margin: 0.5rem 0;
+  color: #1e293b;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.email {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 0.85rem;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 15px;
+  width: 100%;
+  text-align: left;
+  color: #475569;
+}
+
+.website {
+  color: #6366f1;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* --- TAMBAHAN UNTUK TOMBOL EDIT & DELETE --- */
+
+.actionButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  width: 100%;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 15px;
+}
+
+.editBtn, .deleteBtn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Style Tombol Edit */
+.editBtn {
+  background-color: #f1f5f9;
+  color: #6366f1;
+}
+
+.editBtn:hover {
+  background-color: #e0e7ff;
+  color: #4338ca;
+}
+
+/* Style Tombol Delete */
+.deleteBtn {
+  background-color: #fff1f2;
+  color: #ef4444;
+}
+
+.deleteBtn:hover {
+  background-color: #ffe4e6;
+  color: #b91c1c;
+}
+
+/* Memberikan efek tekan saat tombol diklik */
+.editBtn:active, .deleteBtn:active {
+  transform: scale(0.95);
+}

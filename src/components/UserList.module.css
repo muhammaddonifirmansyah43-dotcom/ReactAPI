@@ -1,0 +1,61 @@
+/* src/components/UserList.module.css */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titleSection {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titleSection h2 {
+  font-size: 2rem;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.stats {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.searchWrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 16px;
+  border: 2px solid #e2e8f0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.searchInput:focus {
+  border-color: #6366f1;
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.2);
+}
+
+.refreshButton {
+  display: block;
+  margin: 40px auto 0;
+  padding: 12px 24px;
+  background-color: #f1f5f9;
+  color: #475569;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.refreshButton:hover {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}

@@ -1,0 +1,120 @@
+/* src/components/PokemonDashboard.module.css */
+.container {
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loader {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #4a5568;
+}
+
+.search {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+  box-sizing: border-box; /* Sangat penting agar padding tidak merusak lebar */
+}
+
+.filterContainer {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterBtn {
+  padding: 6px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  transition: all 0.2s ease;
+  font-weight: 500;
+  border: 1px solid #ddd;
+  background-color: white;
+  color: #4a5568;
+}
+
+.activeBtn {
+  background-color: #3182ce !important;
+  color: white !important;
+  border: none !important;
+}
+
+/* Update pada Grid agar kartu tidak terlalu sempit */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.idBadge {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 0.9rem;
+  color: #cbd5e0;
+  font-weight: bold;
+}
+
+/* Update pada Gambar agar tidak 'tumpah' keluar kartu */
+.img {
+  width: 100%;
+  max-width: 160px; /* Batasi lebar maksimal gambar */
+  height: auto;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 5px 10px rgba(0,0,0,0.1));
+}
+
+.pokemonName {
+  text-transform: capitalize;
+  margin: 10px 0;
+  color: #2d3748;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.typeWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.badge {
+  background: #edf2f7;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-transform: uppercase;
+}
